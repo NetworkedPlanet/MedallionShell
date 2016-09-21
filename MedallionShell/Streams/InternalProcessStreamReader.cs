@@ -45,8 +45,8 @@ namespace Medallion.Shell.Streams
             }
             finally
             {
-                this.processStream.Close();
-                this.pipe.InputStream.Close();
+                this.processStream.Dispose();
+                this.pipe.InputStream.Dispose();
             }
         }
 
